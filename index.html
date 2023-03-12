@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <main class="container">
+    <h1>Advice #</h1>
+      <p>
+      <div role="loader" style="display:flex;" class="loader">
+        <div class="dot-loader"></div>
+        <div class="dot-loader dot-loader--2"></div>
+        <div class="dot-loader dot-loader--3"></div>
+      </div>
+      </p>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img src="./images/pattern-divider-mobile.svg" alt="divider" />
+      </picture>
+      <button onclick="fetchAdvice()">
+        <img src="./images/icon-dice.svg" alt="" />
+      </button>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Kamlesh Yadav ❤️</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
